@@ -34,7 +34,9 @@ Inversion and inheritance
 
 **Task 3:** Explain:
  1. What is priority inversion? What is unbounded priority inversion?
- 3. Does priority inheritance avoid deadlocks?
+      - A priority inversion occurs when a high-priority process has to wait for a low-priority one to finish, for example due to it blocking a shared resource that the high-priority one needs. An unbounded priority inversion is one that can cause the high priority process to wait forever due to resource locks.
+ 2. Does priority inheritance avoid deadlocks?
+      - Yes, it may, as long as the priority the blocking task is high enough to prevent it from being blocked from finishing its work with the resource.
 
 
 
@@ -54,7 +56,6 @@ Utilization and response time
  1. There are a number of assumptions/conditions that must be true for the utilization and response time tests to be usable (The "simple task model"). What are these assumptions? Comment on how realistic they are.
  2. Perform the utilization test for task set 2. Is the task set schedulable?
  3. Perform response-time analysis for task set 2. Is the task set schedulable? If you got different results than in 2), explain why.
- 4. (Optional) Draw a Gantt chart to show how task set 2 executes using rate monotonic priority assignment, and verify that your conclusions are correct.
 
 ###Formulas
 
