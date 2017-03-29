@@ -28,7 +28,9 @@ Inversion and inheritance
 
 **Task 2:** Draw Gantt charts to show how task set 1 executes:
  1. Without priority inheritance
+ ![](ta1.png)
  2. With priority inheritance
+  ![](ta2.png)
 
 **Task 3:** Explain:
  1. What is priority inversion? What is unbounded priority inversion?
