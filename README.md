@@ -36,10 +36,7 @@ Inversion and inheritance
  1. What is priority inversion? What is unbounded priority inversion?
       - A priority inversion occurs when a high-priority process has to wait for a low-priority one to finish, for example due to it blocking a shared resource that the high-priority one needs. An unbounded priority inversion is one that can cause the high priority process to wait forever due to resource locks.
  2. Does priority inheritance avoid deadlocks?
-      - Yes, it may, as long as the priority the blocking task is high enough to prevent it from being blocked from finishing its work with the resource.
-
-
-
+      - Yes, it may, as long as the priority the blocking task inherits is high enough to prevent it from being blocked from finishing its work on the resource.
 
 Utilization and response time
 -----------------------------
