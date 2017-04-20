@@ -59,6 +59,8 @@ Utilization and response time
           - A fairly reasonable and realistic requirement; tasks seldom directly depend on each other, particularly not in embedded systems.
      - The task switching times need to be negligble and/or fixed
           - This is not necessarily realistic. If a task returns with a deep call stack remaining after it, or with connections to external resources that need to finish/clean up before switching to a new task, this may not be the case on most systems.
+     - All tasks run on a single thread
+          - Completely realistic.
      - Task deadlines are absolute and fixed
           - Also far from always the case unless you are in a hard real time system, so this is not a very realistic constraint for most systems.
      - System needs to utilize rate-monotonic scheduling (shorter task duration leads to higher task priority)
