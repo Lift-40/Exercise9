@@ -69,3 +69,17 @@ Utilization and response time
      - ![](eq1.gif), ![](eq2.gif)
      - The utilization test fails so the system may not be schedulable.
 3. Perform response-time analysis for task set 2. Is the task set schedulable? If you got different results than in 2), explain why.
+     - Task c (shortest execution time, highest priority)
+          - ![](ceq1.gif)
+     - Task b (second shortest execution time, second highest priority)
+          - ![](beq1.gif)
+          - ![](beq2.gif)
+          - ![](beq3.gif)
+     - Task a (longest execution time, lowest priority)
+          - ![](aeq1.gif)
+          - ![](aeq2.gif)
+          - ![](aeq3.gif)
+          - ![](aeq4.gif)
+          - ![](aeq5.gif)
+          - ![](aeq6.gif)
+     - The task set is thus schedulable. The reason for why we can get a different result here from in 4.2 is due to the utilization test only being a sufficient condition, but not a necessary one; it can fail despite the task set being schedulable.
