@@ -51,7 +51,20 @@ Utilization and response time
 
 **Task 4:**
  1. There are a number of assumptions/conditions that must be true for the utilization and response time tests to be usable (The "simple task model"). What are these assumptions? Comment on how realistic they are.
+     - We need to have a fixed, predictable set of tasks, with no random/unpredictable tasks
+          - This is fairly realistic for many embedded systems. The tasks we are going to run are generally well-defined in advance.
+     - The tasks need to be periodic with known periods
+          - Realistic in many systems; tasks often run on fixed intervals.
+     - The tasks need to be independent
+          - A fairly reasonable and realistic requirement; tasks seldom directly depend on each other, particularly not in embedded systems.
+     - The task switching times need to be negligble and/or fixed
+          - This is not necessarily realistic. If a task returns with a deep call stack remaining after it, or with connections to external resources that need to finish/clean up before switching to a new task, this may not be the case on most systems.
+     - Task deadlines are absolute and fixed
+          - Also far from always the case unless you are in a hard real time system, so this is not a very realistic constraint for most systems.
+     - System needs to utilize rate-monotonic scheduling (shorter task duration leads to higher task priority)
+          - Sure. This is a fairly realistic (but restrictive) design decision.
  2. Perform the utilization test for task set 2. Is the task set schedulable?
+     - 
  3. Perform response-time analysis for task set 2. Is the task set schedulable? If you got different results than in 2), explain why.
 
 ###Formulas
