@@ -7,7 +7,7 @@ Properties
  1. Why do we assign priorities to tasks?
       - This is done to better allocate resources (such as processing time) to the tasks that need it the most, which may increase the performance of the system.
  2. What features must a scheduler have for it to be usable for real-time systems?
-      - It must have the ability to pause running processes, maintain and manage a queue of running processes and start new processes.
+      - In general it must have the ability to pause running processes, maintain and manage a queue of running processes and start new processes. In a real-time system we get the added constraints of the scheduler also being predictable and analysable so that we can mathematically prove that all tasks will meet their deadlines.
 
 Inversion and inheritance
 -------------------------
