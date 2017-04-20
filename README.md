@@ -69,6 +69,7 @@ Utilization and response time
      - ![](eq1.gif), ![](eq2.gif)
      - The utilization test fails so the system may not be schedulable.
 3. Perform response-time analysis for task set 2. Is the task set schedulable? If you got different results than in 2), explain why.
+     - NB: All instances of the less than symbol should be read as the less than or equal symbol in the equations below.
      - Task c (shortest execution time, highest priority)
           - ![](ceq1.gif)
      - Task b (second shortest execution time, second highest priority)
